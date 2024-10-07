@@ -1,0 +1,62 @@
+/* Center the form */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #d1e1c1; /* Softer, farm-like color */
+}
+
+/* Style the form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1.5rem; /* Larger input size */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1.5rem; /* Larger button size */
+  background-color: #6b8e23; /* Olive green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #556b2f; /* Darker green on hover */
+}
+
+/* Center the links below the form */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-links a img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #4d4d4d; /* Darker color for text */
+}
+
+.social-links a:hover {
+  color: #6b8e23; /* Olive green on hover */
+}

@@ -1,0 +1,261 @@
+.modal {
+    z-index: 999; /* Ensure modals stay on top */
+}
+
+/* Container to center content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+}
+
+/* Styling the form */
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; /* Space between form and icons */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Width of the search input */
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Button hover effect */
+}
+
+/* General styling for title */
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Instructions button styling */
+.instructions-btn {
+    font-size: 1.2rem;
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Modal styles for instructions and result popup */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: left; /* Left-aligned for better readability */
+    position: relative; /* For close button positioning */
+    color: black; /* Text color for the modal */
+    font-family: Arial, sans-serif; /* Readable font */
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.modal-content p, .modal-content ul {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.modal-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.modal-content li {
+    margin-bottom: 10px;
+}
+
+.modal-content strong {
+    font-weight: bold;
+}
+
+.modal-content em {
+    font-style: italic;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for the icon container */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-container a {
+    margin: 0 10px;
+}
+
+.icon-container img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Text input styling */
+input {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* Button styling for larger sizes */
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+/* Title styling */
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* Additional styling for result container */
+.result-container {
+    display: none; /* Hidden by default, as we are using the modal now */
+}
+
+/* Body background animation */
+body {
+    background: url('farm.png') repeat-x;
+    animation: backgroundScroll 15s linear infinite;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes backgroundScroll {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2000px 0; /* Adjust based on your image width */
+    }
+}
+
+/* Responsive modal width for smaller screens */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Adjust for smaller screens */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Update button styling */
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #844242; /* Darker blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal box shadow and round corners */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    color: black;
+}
+
+/* Title Font Styling */
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Body background overlay */
+body {
+    background: url('farm.png') repeat-x;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.4); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
