@@ -1,5 +1,6 @@
 import React from 'react';
 import NaturalQuery from './NaturalQuery';  // Import the NaturalQuery component
+import './App.css';
 
 function App() {
   return (
